@@ -4,12 +4,12 @@ See: https://freetakteam.github.io/FreeTAKServer-User-Docs/Installation/Linux/In
   Follow the Linux --> Ubuntu thread
 
 References:
-https://docs.freebsd.org/en/books/handbook/
-https://freetakteam.github.io/FreeTAKServer-User-Docs/
-https://pypi.org/project/FreeTAKServer/
-https://docs.freebsd.org/en/books/developers-handbook/tools/
-https://docs.freebsd.org/en/books/developers-handbook/tools/https://www.pythonhelp.org/learn/introduction/setting-up-development-environment-freebsd/
-https://computingforgeeks.com/how-to-install-pip-python-package-manager-on-freebsd-12/
+* https://docs.freebsd.org/en/books/handbook/
+* https://freetakteam.github.io/FreeTAKServer-User-Docs/
+* https://pypi.org/project/FreeTAKServer/
+* https://docs.freebsd.org/en/books/developers-handbook/tools/
+* https://docs.freebsd.org/en/books/developers-handbook/tools/https://www.pythonhelp.org/learn/introduction/setting-up-development-environment-freebsd/
+* https://computingforgeeks.com/how-to-install-pip-python-package-manager-on-freebsd-12/
 
 * Work inside jail from now on
 # bastille console FreeTakServer
