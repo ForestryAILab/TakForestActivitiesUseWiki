@@ -8,9 +8,13 @@ FreeTAKServer - install to FreeBSD jail
 * sudo apt update && sudo apt install python3 && sudo apt install python3-pip
 * sudo apt install python3-dev python3-setuptools build-essential python3-gevent python3-lxml libcairo2-dev
 
+* https://www.pythonhelp.org/learn/introduction/setting-up-development-environment-freebsd/
 * consult freshports to find FreeBSD equivalents
 # pkg install pkg
-# pkg install python py39-pip py39-dev
+* current freebsd 13.2 python is 3.9 
+# pkg install python py39-pip 
+
+py39-dev
 
 
 * Create user freetakserver 
