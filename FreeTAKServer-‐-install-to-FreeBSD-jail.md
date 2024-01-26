@@ -1,5 +1,13 @@
 FreeTAKServer - install to FreeBSD jail
 ---------------------------------------
+See: https://freetakteam.github.io/FreeTAKServer-User-Docs/Installation/Linux/Installation/
+  Follow the Linux --> Ubuntu thread
+
+References:
+https://docs.freebsd.org/en/books/developers-handbook/tools/
+https://docs.freebsd.org/en/books/developers-handbook/tools/https://www.pythonhelp.org/learn/introduction/setting-up-development-environment-freebsd/
+https://computingforgeeks.com/how-to-install-pip-python-package-manager-on-freebsd-12/
+
 * Work inside jail from now on
 # bastille console FreeTakServer
 
@@ -8,13 +16,23 @@ FreeTAKServer - install to FreeBSD jail
 * sudo apt update && sudo apt install python3 && sudo apt install python3-pip
 * sudo apt install python3-dev python3-setuptools build-essential python3-gevent python3-lxml libcairo2-dev
 
-* https://www.pythonhelp.org/learn/introduction/setting-up-development-environment-freebsd/
+* 
 * consult freshports to find FreeBSD equivalents
-# pkg install pkg
-* current freebsd 13.2 python is 3.9 
-# pkg install python py39-pip 
+* current FreeBSD 13.2 python is 3.9 
 
-py39-dev
+* Ubuntu ==> FreeBSD
+* python3 ==> lang/python3
+* python3-pip ==> devel/py-pip
+* python3-dev ==> ??
+* python3-setuptools ==> py39-setuptools (already install) 
+* build-essential ==> gcc or clang development environment (clang already installed)
+* python3-gevent ==> devel/py-gevent
+* python3-lxml ==> devel/py-lxml
+* libcairo2-dev ==> graphics/cairo
+
+# pkg install pkg
+# pkg install python py39-pip 
+# pkg install devel/py-gevent devel/py-lxml graphics/cairo
 
 
 * Create user freetakserver 
