@@ -4,6 +4,9 @@ See: https://freetakteam.github.io/FreeTAKServer-User-Docs/Installation/Linux/In
   Follow the Linux --> Ubuntu thread
 
 References:
+https://docs.freebsd.org/en/books/handbook/
+https://freetakteam.github.io/FreeTAKServer-User-Docs/
+https://pypi.org/project/FreeTAKServer/
 https://docs.freebsd.org/en/books/developers-handbook/tools/
 https://docs.freebsd.org/en/books/developers-handbook/tools/https://www.pythonhelp.org/learn/introduction/setting-up-development-environment-freebsd/
 https://computingforgeeks.com/how-to-install-pip-python-package-manager-on-freebsd-12/
@@ -18,10 +21,10 @@ https://computingforgeeks.com/how-to-install-pip-python-package-manager-on-freeb
 
 * 
 * consult freshports to find FreeBSD equivalents
-* current FreeBSD 13.2 python is 3.9 
+* or use $ pkg search  
 
 * Ubuntu ==> FreeBSD
-* python3 ==> lang/python3
+* python3 ==> lang/python311
 * python3-pip ==> devel/py-pip
 * python3-dev ==> ??
 * python3-setuptools ==> py39-setuptools (already install) 
@@ -31,7 +34,7 @@ https://computingforgeeks.com/how-to-install-pip-python-package-manager-on-freeb
 * libcairo2-dev ==> graphics/cairo (?? py39-cairo)
 
 # pkg install pkg
-# pkg install python py39-pip 
+# pkg install lang/python311 devel/py-pip 
 # pkg install devel/py-gevent devel/py-lxml graphics/cairo
 
 
