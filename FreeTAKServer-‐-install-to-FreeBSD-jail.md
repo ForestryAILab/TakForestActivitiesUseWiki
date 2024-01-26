@@ -12,17 +12,19 @@ References:
 * https://computingforgeeks.com/how-to-install-pip-python-package-manager-on-freebsd-12/
 
 * Work inside jail from now on
-    bastille console FreeTakServer
+`bastille console FreeTakServer`
 
 * Install dependencies into jail
 * Ubuntu dependencies:
-* sudo apt update && sudo apt install python3 && sudo apt install python3-pip
-* sudo apt install python3-dev python3-setuptools build-essential python3-gevent python3-lxml libcairo2-dev
+
+`$ apt update && sudo apt install python3 && sudo apt install python3-pip`
+
+`$ apt install python3-dev python3-setuptools build-essential python3-gevent python3-lxml libcairo2-dev`
 
 * consult freshports to find FreeBSD equivalents
 * or use $ pkg search  
 
-* Ubuntu ==> FreeBSD
+### Ubuntu ==> FreeBSD
 * python3 ==> lang/python311
 * python3-pip ==> devel/py-pip
 * python3-dev ==> ??
@@ -32,9 +34,11 @@ References:
 * python3-lxml ==> devel/py-lxml
 * libcairo2-dev ==> graphics/cairo (?? py39-cairo)
 
-    pkg install pkg
-    pkg install lang/python311 devel/py-pip 
-    pkg install devel/py-gevent devel/py-lxml graphics/cairo
+`$ pkg install pkg`
+
+`$ pkg install lang/python311 devel/py-pip `
+
+`$ pkg install devel/py-gevent devel/py-lxml graphics/cairo`
 
 * Create user freetakserver 
 
