@@ -28,7 +28,7 @@ https://computingforgeeks.com/how-to-install-pip-python-package-manager-on-freeb
 * build-essential ==> gcc or clang development environment (clang already installed)
 * python3-gevent ==> devel/py-gevent
 * python3-lxml ==> devel/py-lxml
-* libcairo2-dev ==> graphics/cairo
+* libcairo2-dev ==> graphics/cairo (?? py39-cairo)
 
 # pkg install pkg
 # pkg install python py39-pip 
