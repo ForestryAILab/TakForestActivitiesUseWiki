@@ -12,7 +12,6 @@ Follow the Linux --> Ubuntu thread
 * https://docs.freebsd.org/en/books/developers-handbook/tools/
 * https://docs.freebsd.org/en/books/developers-handbook/tools/https://www.pythonhelp.org/learn/introduction/setting-up-development-environment-freebsd/
 * https://computingforgeeks.com/how-to-install-pip-python-package-manager-on-freebsd-12/
-* https://www.digitalocean.com/community/tutorials/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1
 ***
 * Work inside jail from now on
 
@@ -30,7 +29,7 @@ $ apt install python3-dev python3-setuptools build-essential python3-gevent pyth
 
 * consult freshports to find FreeBSD equivalents or use $ pkg search  
 
-### Ubuntu ==> FreeBSD
+##### Ubuntu ==> FreeBSD
 * python3 ==> lang/python311
 * python3-pip ==> devel/py-pip
 * python3-dev ==> ??
@@ -47,6 +46,29 @@ $ pkg install devel/py-gevent devel/py-lxml graphics/cairo
 ```
 
 * Create user freetakserver 
+```
+$ adduser
+Username: freetakserver                         
+Full name: freetakserver
+Uid (Leave empty for default): 
+Login group [freetakserver]: 
+Login group is freetakserver. Invite freetakserver into other groups? []: 
+Login class [default]: 
+Shell (sh csh tcsh nologin) [sh]: nologin
+Home directory [/home/freetakserver]: 
+Home directory permissions (Leave empty for default): 
+Use password-based authentication? [yes]: no
+Lock out the account after creation? [no]: 
+.....
+OK? (yes/no): yes
+adduser: INFO: Successfully added (freetakserver) to the user database.
+Add another user? (yes/no): no
+Goodbye!
+```
+```
+$ cd /home/freetakuser
+$ mkdir FreeTAKServer
+$ cd FreeTAKServer
+$ pyton3.11 venv venv-freetakserver
 
-* Switch to freetakserver user
 
