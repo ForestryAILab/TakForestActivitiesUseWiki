@@ -1,4 +1,4 @@
-Welcome to the AndroidTacticalAssaultKit-CIV wiki!
+Welcome to the ForestryAI TAK for forest activies project wiki!
 
 These are notes on building out and using TAK including links to other projects and documentation
 
