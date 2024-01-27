@@ -12,6 +12,7 @@ Follow the Linux --> Ubuntu thread
 * https://docs.freebsd.org/en/books/developers-handbook/tools/
 * https://docs.freebsd.org/en/books/developers-handbook/tools/https://www.pythonhelp.org/learn/introduction/setting-up-development-environment-freebsd/
 * https://computingforgeeks.com/how-to-install-pip-python-package-manager-on-freebsd-12/
+* https://www.digitalocean.com/community/tutorials/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1
 ***
 * Work inside jail from now on
 
