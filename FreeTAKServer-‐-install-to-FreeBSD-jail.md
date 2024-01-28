@@ -33,7 +33,7 @@ $ apt install python3-dev python3-setuptools build-essential python3-gevent pyth
 * python3 ==> lang/python311
 * python3-pip ==> devel/py-pip
 * python3-dev ==> ??
-* python3-setuptools ==> py39-setuptools (already install) 
+* python3-setuptools ==> devel/py-setuptools (already installed with py-pip) 
 * build-essential ==> gcc or clang development environment (clang already installed)
 * python3-gevent ==> devel/py-gevent
 * python3-lxml ==> devel/py-lxml
@@ -45,28 +45,13 @@ $ pkg install lang/python311 devel/py-pip
 $ pkg install devel/py-gevent devel/py-lxml graphics/cairo
 ```
 
-* Create user freetakserver 
-```
-$ adduser
-Username: freetakserver                         
-Full name: freetakserver
-Uid (Leave empty for default): 
-Login group [freetakserver]: 
-Login group is freetakserver. Invite freetakserver into other groups? []: 
-Login class [default]: 
-Shell (sh csh tcsh nologin) [sh]: nologin
-Home directory [/home/freetakserver]: 
-Home directory permissions (Leave empty for default): 
-Use password-based authentication? [yes]: no
-Lock out the account after creation? [no]: 
-.....
-OK? (yes/no): yes
-adduser: INFO: Successfully added (freetakserver) to the user database.
-Add another user? (yes/no): no
-Goodbye!
+* Create service user freetakserver
+* https://forums.freebsd.org/threads/how-to-create-add-a-system-account.70197/
+* $ pw useradd foo -u 990 -c "Captain Foo,Testlab" -s /usr/sbin/nologin -G group1,group2,group3
 ```
 ```
-$ cd /home/freetakuser
+```
+$ cd /usr/local
 $ mkdir FreeTAKServer
 $ cd FreeTAKServer
 $ pyton3.11 venv venv-freetakserver
