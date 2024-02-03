@@ -42,7 +42,7 @@ $ apt install python3-dev python3-setuptools build-essential python3-gevent pyth
 ```
 $ pkg install pkg
 $ pkg install lang/python311 devel/py-pip
-$ pkg install devel/py-gevent devel/py-lxml graphics/cairo
+$ pkg install devel/py-gevent devel/py-lxml graphics/cairo bash
 ```
 
 * Create service user freetakserver
@@ -51,9 +51,15 @@ $ pkg install devel/py-gevent devel/py-lxml graphics/cairo
 ```
 ```
 ```
-$ cd /usr/local
+$ pw useradd freetakserver -u 1001 -c "FreeTAKServer" -s /usr/sbin/nologin -G freetakserver
+$ mkdir /opt
+$ cd /opt
 $ mkdir FreeTAKServer
 $ cd FreeTAKServer
-$ pyton3.11 venv venv-freetakserver
-
+$ python3.11 -m venv venv3.11
+$ bash
+$ . venv3.11/bin/activate
+$ pip install -U pip
+$ pip install FreeTAKServer[ui]
+$
 
