@@ -1,4 +1,4 @@
-### FreeTAKServer - install to FreeBSD jail
+### FreeTAKServer - install to FreeBSD jail - with pip
 ***
 
 See: https://freetakteam.github.io/FreeTAKServer-User-Docs/Installation/Linux/Installation/
