@@ -41,8 +41,8 @@ $ apt install python3-dev python3-setuptools build-essential python3-gevent pyth
 
 ```
 $ pkg install pkg
-$ pkg install lang/python311 devel/py-pip
-$ pkg install devel/py-gevent devel/py-lxml graphics/cairo bash
+$ pkg install lang/python311 devel/py-pip bash
+$ pkg install devel/py-gevent devel/py-lxml graphics/cairo graphics/py-cairo devel/py-yaml
 ```
 
 * Create service user freetakserver
@@ -60,6 +60,7 @@ $ python3.11 -m venv venv3.11
 $ bash
 $ . venv3.11/bin/activate
 $ pip install -U pip
-$ pip install FreeTAKServer[ui]
-$
+$ pip install -U wheel
+$ pip install FreeTAKServer[ui] - errors
+* errors because pyyaml is version 6.0.1, but program wants v6.0 only
 
