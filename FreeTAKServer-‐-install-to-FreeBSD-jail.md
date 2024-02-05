@@ -125,6 +125,40 @@ $ pkg install rust
 
 $ pkg install py-pillow
 $ pip install ./FreeTakServer[ui]
-##### Successful Build
+* Successful Build
+```
+#### Check Installation & Configure
+```
+$ pip check FreeTakServer
+* No broken requirements found
 
+* Configure
+$ python -m FreeTAKServer.controllers.services.FTS 
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/opt/FreeTAKServer/venv3.11/lib/python3.11/site-packages/FreeTAKServer/controllers/services/FTS.py", line 17, in <module>
+    from digitalpy.core.zmanager.subject import Subject
+  File "/opt/FreeTAKServer/venv3.11/lib/python3.11/site-packages/digitalpy/core/zmanager/subject.py", line 1, in <module>
+    import zmq
+  File "/opt/FreeTAKServer/venv3.11/lib/python3.11/site-packages/zmq/__init__.py", line 61, in <module>
+    _load_libzmq()
+  File "/opt/FreeTAKServer/venv3.11/lib/python3.11/site-packages/zmq/__init__.py", line 36, in _load_libzmq
+    from . import libzmq
+ImportError: /opt/FreeTAKServer/venv3.11/lib/python3.11/site-packages/zmq/libzmq.cpython-311.so: Undefined symbol "unw_getcontext"
+
+$ pip uninstall pyzmq
+$ pkg install net/py-pyzmq --> doesn't help, uninstalled
+$ pkg install net/libzmq4
+$ pip cache purge (kept calling cached FreeBSD whl)
+$ pip install --no-binary=:all: pyzmq (compile from source, as per https://pypi.org/project/pyzmq/)
+* test
+$ python --> import zmq - no errors
+```
+```
+$ pkg install databases/py-sqlite3
+$ python -m FreeTAKServer.controllers.services.FTS
+* answer questions --> /opt/FreeTAKServer/***.yaml
+
+FTS now starts from the CLI
 ```
