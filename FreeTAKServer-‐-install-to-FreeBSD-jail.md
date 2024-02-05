@@ -125,6 +125,6 @@ $ pkg install rust
 
 $ pkg install py-pillow
 $ pip install ./FreeTakServer[ui]
-
+##### Successful Build
 
 ```
